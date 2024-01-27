@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="menu">
+          <img class="logo" src="/images/logo.svg" alt="Blogr" />
+
+          <div class="menu-items">
+            <div class="dropdown-menu menu-1">
+              <div class="text">
+                <a class="cta-btn cta-1" onclick="handleClick(1)" href="#"
+                  >Product</a
+                >
+                <img src="/images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">Overview</a></li>
+                <li class="items"><a href="#">Pricing</a></li>
+                <li class="items"><a href="#">Marketplace</a></li>
+                <li class="items"><a href="#">Features</a></li>
+                <li class="items"><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-menu menu-2">
+              <div class="text">
+                <a class="cta-btn cta-2" onclick="handleClick(2)" href="#"
+                  >Company</a
+                >
+                <img src="/images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">About</a></li>
+                <li class="items"><a href="#">Team</a></li>
+                <li class="items"><a href="#">Blog</a></li>
+                <li class="items"><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-menu menu-3">
+              <div class="text">
+                <a class="cta-btn cta-3" onclick="handleClick(3)" href="#"
+                  >Connect</a
+                >
+                <img src="/images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">Contact</a></li>
+                <li class="items"><a href="#">Newsletter</a></li>
+                <li class="items"><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="register desktop-reg">
+          <a href="#" class="btn-login">Login</a>
+          <a href="#" class="btn-signup bg-light">Sign Up</a>
+        </div>
+
+        <div class="hamburger"></div>
+
+        <div class="mobile-menu hidden">
+          <div class="menu-items">
+            <div class="dropdown-menu menu-1">
+              <div class="text">
+                <a class="dropdown dropdown-1" onclick="showItems(1)" href="#"
+                  >Product</a
+                >
+                <img src="/images/icon-arrow-dark.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">Overview</a></li>
+                <li class="items"><a href="#">Pricing</a></li>
+                <li class="items"><a href="#">Marketplace</a></li>
+                <li class="items"><a href="#">Features</a></li>
+                <li class="items"><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-menu menu-2">
+              <div class="text">
+                <a class="dropdown dropdown-2" onclick="showItems(2)" href="#"
+                  >Company</a
+                >
+                <img src="/images/icon-arrow-dark.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">About</a></li>
+                <li class="items"><a href="#">Team</a></li>
+                <li class="items"><a href="#">Blog</a></li>
+                <li class="items"><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-menu menu-3">
+              <div class="text">
+                <a class="dropdown dropdown-3" onclick="showItems(3)" href="#"
+                  >Connect</a
+                >
+                <img src="/images/icon-arrow-dark.svg" alt="" />
+              </div>
+              <ul class="dropdown-list hidden">
+                <li class="items"><a href="#">Contact</a></li>
+                <li class="items"><a href="#">Newsletter</a></li>
+                <li class="items"><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="register">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup bg-light">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+
+      <div class="buttons">
+        <a href="#" class="btn-free bg-light">Start for Free</a>
+        <a href="#" class="btn-learn bg-transparent">Learn More</a>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <h1>Designed for the future</h1>
+
+      <img
+        src="/images/illustration-editor-mobile.svg"
+        alt="Editor"
+        class="mobile-image"
+      />
+
+      <div class="container">
+        <div class="text-1">
+          <h2>Introducing an extensible editor</h2>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+        <div class="text-2">
+          <h2>Robust content management</h2>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </div>
+
+      <img
+        class="desktop-image"
+        src="/images/illustration-editor-desktop.svg"
+        alt=""
+      />
+    </section>
+
+    <section class="dark-blue">
+      <img src="/images/illustration-phones.svg" alt="Phones" />
+
+      <div class="content">
+        <h1>State of the Art Infrastructure</h1>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide the
+          backbone for ultra-fast connectivity. This ensures your site will load
+          instantly, no matter where your readers are, keeping your site
+          competitive.
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <img
+        src="/images/illustration-laptop-desktop.svg"
+        class="desktop-image"
+        alt="Laptop"
+      />
+
+      <img
+        src="/images/illustration-laptop-mobile.svg"
+        alt="Laptop"
+        class="mobile-image"
+      />
+
+      <div class="container">
+        <div class="text-1">
+          <h2>Free, open, simple</h2>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+        <div class="text-2">
+          <h2>Powerful tooling</h2>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <img src="/images/logo.svg" alt="Blogr" class="logo" />
+
+      <div class="link-division">
+        <h4>Product</h4>
+
+        <ul class="links-list">
+          <li class="link"><a href="#">Overview</a></li>
+          <li class="link"><a href="#">Pricing</a></li>
+          <li class="link"><a href="#">Marketplace</a></li>
+          <li class="link"><a href="#">Features</a></li>
+          <li class="link"><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="link-division">
+        <h4>Company</h4>
+
+        <ul class="links-list">
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Team</a></li>
+          <li class="link"><a href="#">Blog</a></li>
+          <li class="link"><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="link-division">
+        <h4>Connect</h4>
+
+        <ul class="links-list">
+          <li class="link"><a href="#">Contact</a></li>
+          <li class="link"><a href="#">Newsletter</a></li>
+          <li class="link"><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
